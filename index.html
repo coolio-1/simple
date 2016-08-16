@@ -1,0 +1,21 @@
+<!doctype html>
+  <html>
+   <head>
+    <title>Chat Application</title>
+    <link rel='stylesheet' href='style.css' type='text/css'/>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="chat.js"></script>
+  </head>
+  <body> 
+    <p id="messages"></p>
+    <span id="notifyUser"></span>
+    <form id="form1" action="" onsubmit="return enterName();"><input id="name" placeholder="Enter your username"/><input type="submit" id="button1" value="Send"/></form>
+    
+    <form id="form2"  action="" onsubmit="return submitfunction();" > 
+
+      <input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type your message here.." /><input type="submit" id="button2" value="Send"/> 
+    </form>
+
+  </body>
+</html>
